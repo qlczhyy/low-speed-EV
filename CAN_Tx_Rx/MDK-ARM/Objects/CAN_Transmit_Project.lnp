@@ -1,0 +1,23 @@
+--cpu=Cortex-M4.fp.sp
+".\objects\startup_n32g45x.o"
+".\objects\system_n32g45x.o"
+".\objects\misc.o"
+".\objects\n32g45x_can.o"
+".\objects\n32g45x_dbg.o"
+".\objects\n32g45x_flash.o"
+".\objects\n32g45x_gpio.o"
+".\objects\n32g45x_pwr.o"
+".\objects\n32g45x_usart.o"
+".\objects\n32g45x_bkp.o"
+".\objects\n32g45x_rcc.o"
+".\objects\n32g45x_rtc.o"
+".\objects\main.o"
+".\objects\user_can_config.o"
+".\objects\user_led_config.o"
+".\objects\user_systick_config.o"
+".\objects\user_usart_config.o"
+".\objects\n32g45x_it.o"
+--library_type=microlib --strict --scatter ".\Objects\CAN_Transmit_Project.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\CAN_Transmit_Project.map" -o .\Objects\CAN_Transmit_Project.axf

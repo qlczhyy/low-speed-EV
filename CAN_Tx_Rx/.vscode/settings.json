@@ -1,0 +1,5 @@
+{
+    "files.associations": {
+        "user_systick_config.h": "c"
+    }
+}
